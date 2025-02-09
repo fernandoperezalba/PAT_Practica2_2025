@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Forumista App</title>
+  <!-- Bootstrap CSS desde CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Ocultamos todas las secciones por defecto */
+    section {
+      display: none;
+    }
+    /* Se muestra la sección activa */
+    section.active {
+      display: block;
+    }
+    pre {
+      background-color: #f8f9fa;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <!-- Usamos hashes para la navegación interna -->
+      <a class="navbar-brand" href="#home">Forumista</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarApp" 
+              aria-controls="navbarApp" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarApp">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#viajes">Viajes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#restaurantes">Restaurantes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#informe">Informe</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <div class="container my-5">
+    <!-- Sección de Inicio -->
+    <section id="home" class="active">
+      <h1>Inicio</h1>
+      
+      <!-- Video introductorio -->
+      <h2>¿Por qué viajar?</h2>
+      <div class="ratio ratio-16x9 mb-4">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/aaExiKsvt9A?si=g4YIYG0s8gVuXvYC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      
+      <!-- Contenido principal de la página de inicio -->
+      <h2>Últimas Publicaciones</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <!-- Ejemplo de PostCard -->
+          <div class="card mb-4">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Machu_Picchu%2C_Peru_%282018%29.jpg/640px-Machu_Picchu%2C_Peru_%282018%29.jpg" class="card-img-top" alt="Post 1">
+            <div class="card-body">
+              <h5 class="card-title">Explorando las Ruinas de Machu Picchu</h5>
+              <p class="card-text">Descubre la magia de la antigua civilización inca en este viaje inolvidable.</p>
+              <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- Otro PostCard -->
+          <div class="card mb-4">
+            <img src="https://media.istockphoto.com/id/1380534040/photo/beautiful-view-of-amalfi-on-the-mediterranean-coast-with-lemons-in-the-foreground-italy.jpg?s=612x612&w=0&k=20&c=4UQak9WJkyvN8aEgkLEwjnV5EW2RiGfC_GZNeQaVJeo=" class="card-img-top" alt="Post 2">
+            <div class="card-body">
+              <h5 class="card-title">Sabores del Mediterráneo</h5>
+              <p class="card-text">Un recorrido gastronómico por los mejores platos del Mediterráneo.</p>
+              <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tabla de países más visitados -->
+      <h2>Los países favoritos para hacer turismo!</h2>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>País</th>
+            <th>Número de Visitantes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Francia 🇫🇷</td>
+            <td>89 millones</td>
+          </tr>
+          <tr>
+            <td>España 🇪🇸</td>
+            <td>82.7 millones</td>
+          </tr>
+          <tr>
+            <td>Estados Unidos 🇺🇸</td>
+            <td>79.6 millones</td>
+          </tr>
+          <tr>
+            <td>China 🇨🇳</td>
+            <td>62.9 millones</td>
+          </tr>
+          <tr>
+            <td>Italia 🇮🇹</td>
+            <td>62.1 millones</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Sección de Viajes -->
+    <section id="viajes">
+      <h1>Viajes</h1>
+      <p>Aquí encontrarás consejos, destinos y experiencias de viaje.</p>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <img src="https://www.beautifulworld.com/wp-content/uploads/2016/10/amazon-rainforest.jpg" class="card-img-top" alt="Aventura en la selva">
+            <div class="card-body">
+              <h5 class="card-title">Aventura en la Selva Amazónica</h5>
+              <p class="card-text">Explora la biodiversidad de la Amazonía y vive una experiencia única en contacto con la naturaleza.</p>
+              <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeeDg3_B6u6R6ZFFqKD93WWMppOYal1Gj4vw&s" class="card-img-top" alt="Playa paradisíaca">
+            <div class="card-body">
+              <h5 class="card-title">Descanso en una Playa Paradisíaca</h5>
+              <p class="card-text">Relájate en las playas de aguas cristalinas y arenas blancas, el destino perfecto para desconectar.</p>
+              <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Restaurantes -->
+    <section id="restaurantes">
+      <h1>Restaurantes y Gastronomía</h1>
+      <p>Descubre los mejores restaurantes y recetas deliciosas.</p>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/20/13/65/frivolos-es-el-santuario.jpg" class="card-img-top" alt="Restaurante elegante">
+            <div class="card-body">
+              <h5 class="card-title">Experiencia Gourmet en tu ciudad</h5>
+              <p class="card-text">Disfruta de una experiencia culinaria en uno de los restaurantes más elegantes de la ciudad, donde la alta cocina se convierte en arte.</p>
+              <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <img src="https://www.ibnbattutamall.com/uploads/blogs/intro-1674486308.jpg" class="card-img-top" alt="Comida tradicional">
+            <div class="card-body">
+              <h5 class="card-title">Sabores Tradicionales de México</h5>
+              <p class="card-text">Sumérgete en la riqueza de la gastronomía mexicana con platos llenos de color y sabor que te transportarán a sus raíces.</p>
+              <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Informe -->
+    <section id="informe">
+      <h1>Informe / Descripción General</h1>
+      <p>
+        Este informe detalla el propósito del proyecto Forumista, que es crear una plataforma de foro centrada en viajes y gastronomía.
+        Actualmente, las secciones que se han desarrollado incluyen <strong>Viajes</strong> y <strong>Restaurantes</strong>.
+        Cada sección sirve como un placeholder que simula la estructura y contenido de lo que eventualmente será una parte funcional de la comunidad del foro.
+      </p>
+      <p>
+        Inicialmente, resultaba más cómodo desarrollar todo el proyecto en un único archivo; sin embargo, se ha comprobado que es más apropiado dividir el proyecto en una estructura de carpetas organizada, tal como se muestra a continuación:
+      </p>
+      <pre>
+tu-proyecto/
+└── src/
+    ├── components/
+    │   ├── Navigation.html
+    │   └── PostCard.html
+    ├── pages/
+    │   ├── Index.html
+    │   ├── Viajes.html
+    │   ├── Restaurantes.html
+    │   └── Informe.html
+    ├── App.html
+    └── app.js
+      </pre>
+      <p>
+        A medida que el proyecto evolucione, se planea incorporar funcionalidades dinámicas con JavaScript y un backend que permitirán a los usuarios interactuar, publicar contenido y participar en discusiones. Estas mejoras incluirán la capacidad de registrarse, iniciar sesión y publicar de manera dinámica, transformando estos placeholders en componentes interactivos de la comunidad.
+      </p>
+      <p>
+        Los planes futuros también incluyen la implementación de un sistema de comentarios y votación, así como mejoras en la seguridad, escalabilidad e interfaz de usuario para garantizar una experiencia óptima para todos los participantes.
+      </p>
+
+      <!-- Formulario para propuestas de mejora integrado en la sección de Informe -->
+      <h2>Propuestas de Mejora</h2>
+      <form>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Tu nombre:</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Introduce tu nombre">
+        </div>
+        <div class="mb-3">
+          <label for="propuesta" class="form-label">Tu propuesta:</label>
+          <textarea class="form-control" id="propuesta" rows="3" placeholder="Escribe aquí tu propuesta de mejora"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar Propuesta</button>
+      </form>
+    </section>
+  </div>
+
+  <!-- Imagen de viaje debajo de todas las secciones -->
+  <div class="container text-center my-4">
+    <img src="https://www.smileysapp.com/emojis/traveling-emoji.png" alt="Emoji de Viaje" style="width:300px; height:300px;">
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-light text-center py-3">
+    © 2025 Forumista. Todos los derechos reservados.
+  </footer>
+
+  <!-- Bootstrap JS y Popper desde CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- JavaScript simple para cambiar secciones basado en la URL hash -->
+  <script>
+    function showSection() {
+      // Obtenemos todas las secciones
+      const sections = document.querySelectorAll('section');
+      // Obtenemos el hash actual, por defecto "#home"
+      const hash = location.hash || '#home';
+      // Para cada sección, mostramos u ocultamos según corresponda
+      sections.forEach(section => {
+        if ('#' + section.id === hash) {
+          section.classList.add('active');
+        } else {
+          section.classList.remove('active');
+        }
+      });
+    }
+
+    // Se ejecuta la función al cargar la página
+    window.addEventListener('load', showSection);
+    // Se ejecuta la función cuando cambia el hash (al hacer clic en el menú)
+    window.addEventListener('hashchange', showSection);
+  </script>
+</body>
+</html>
+
+
